@@ -1,0 +1,106 @@
+* {
+    outline: none;
+}
+
+html {
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main section.chat-page {
+    width: 100%;
+    height: 100%;
+}
+
+main section.chat-page .chat {
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+}
+main section.chat-page .chat::-webkit-scrollbar {
+    display: none;
+}
+
+main section.chat-page .chat .message {
+    width: 50%;
+    margin: auto;
+    /* background-color: aquamarine; */
+    margin-bottom: 15px;
+}
+main section.chat-page .chat .message .title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+main section.chat-page .chat .message .title img {
+    width: 20px;
+    border-radius: 50px;
+}
+
+main section.chat-page .chat .message .title span {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+main section.chat-page .chat .message .text {
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+main section.chat-page .prompt {
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    overflow: hidden;
+    padding: 0.9rem;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    position: relative;
+    margin: auto;
+}
+
+main section.chat-page .prompt textarea {
+    background-color: transparent;
+    border-width: 0;
+    resize: none;
+    max-height: 50vh;
+    overflow-y: hidden;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 90%;
+}
+
+main section.chat-page .prompt button {
+    right: 0.75rem;
+    bottom: 1rem;
+    opacity: .1;
+    transition-duration: .15s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    color: rgba(180, 180, 180, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    position: absolute;
+    text-transform: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}

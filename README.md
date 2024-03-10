@@ -1,0 +1,2 @@
+# Zed
+Artificial intelligence project
